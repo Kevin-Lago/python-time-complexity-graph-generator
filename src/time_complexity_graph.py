@@ -31,8 +31,8 @@ def generate_polynomial_time_complexity_graph(resolution, darktheme):
     # Constant Runtime
     plt.plot(linear_sequence, [1 for _ in range(resolution)], label="Constant Runtime")
 
-    plt.savefig("polynomial_time_complexity_graph" + ("_dark.svg" if darktheme else "_light.svg"))
     plt.legend()
+    plt.savefig("polynomial_time_complexity_graph" + ("_dark.svg" if darktheme else "_light.svg"))
     plt.show()
 
 
