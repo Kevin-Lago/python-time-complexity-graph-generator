@@ -78,6 +78,10 @@ def generate_full_time_complexity_graph(darktheme: bool):
 if __name__ == '__main__':
     resolution = int(input("Input Graph Resolution: "))
 
+    while resolution > 100:
+        print("Resolution can not be greater than 100.")
+        resolution = int(input("Input Graph Resolution: "))
+
     constant_sequence = [1 for _ in range(resolution)]
     logarithmic_sequence = [math.log2(i + 1) for i in range(resolution)]
     linear_sequence = [i for i in range(resolution)]
