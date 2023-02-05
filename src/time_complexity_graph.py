@@ -34,7 +34,7 @@ def generate_polynomial_time_complexity_graph(darktheme: bool):
     plt.plot(linear_sequence, constant_sequence, label="Constant Runtime")
 
     plt.legend()
-    plt.savefig("polynomial_time_complexity" + ("_dark.svg" if darktheme else "_light.svg"))
+    plt.savefig("polynomial_time_complexity_graph" + ("_dark.svg" if darktheme else "_light.svg"))
     plt.show()
 
 
@@ -47,7 +47,7 @@ def generate_exponential_time_complexity_graph(darktheme: bool):
     plt.plot(linear_sequence, factorial_sequence, label="Factorial/Combinatorial Runtime")
 
     plt.legend()
-    plt.savefig("exponential_time_complexity" + ("_dark.svg" if darktheme else "_light.svg"))
+    plt.savefig("exponential_time_complexity_graph" + ("_dark.svg" if darktheme else "_light.svg"))
     plt.show()
 
 
